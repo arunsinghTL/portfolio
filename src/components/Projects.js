@@ -207,6 +207,6 @@ function Projecttiles({project,index}){
         <h5 className="w-100 text-center mb-4">{project.title}</h5>
         <a className="text-custom-logo position-absolute top-0 end-0 p-2 pe-1 " href={project.url}><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
         {project.Description.map((pointers,index)=>(<li key={index} className="py-1">{pointers}</li>))}
-        <p className={`text-custom-logo d-flex flex-row position-absolute bottom-0 ${index > 2 ? "mb-5 pb-4" : "mb-2"} justify-content-around align-items-center min-w-75`}><strong>Tools: &nbsp;&nbsp;</strong>{project.Tools.map((tool,index)=>(<span className="me-2" key={index}>{tool}</span>))}</p>
+        <p className={`text-custom-logo d-flex flex-row position-absolute bottom-0 mb-2 justify-content-around align-items-center min-w-75`}><strong>Tools: &nbsp;&nbsp;</strong>{project.Tools.map((tool,index)=>(<span className="me-2" key={index}>{tool}</span>))}</p>
     </div>
 }
