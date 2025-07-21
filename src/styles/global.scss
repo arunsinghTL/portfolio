@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bs-logo-color: #3d83a6;
+}
+.nav-item:hover .nav-link{
+    color: var(--bs-light) !important;
+}
+.nav-link{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+.nav-link.active{
+    color: var(--bs-light) !important;
+}
+.nav-menu{
+    height: .2rem;
+    width: 0%;
+    background-color: #3d83a6;
+    transition: .5s;
+}
+.nav-item:hover .nav-menu{
+    width: 100%;
+}
+.homePage::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background: black;
+    width: 100%;
+    height: 100%;
+}
+.homePage::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: center center no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    animation: zoomInOut 15s infinite ease-in-out;
+    opacity: 0.5;
+}
+@keyframes zoomInOut {
+    0%{
+        background-image: url('/mountains.jpg');
+        scale: (1.05);
+    }
+    15%{
+        background-image: url('/mountains.jpg');
+        scale: (1.05);
+    }
+    25%{
+        scale: (1.25);
+    }
+    50%{
+        background-image: url('/watermark6.jpg');
+        scale: (1.05);
+    }
+    60%{
+        background-image: url('/watermark6.jpg');
+        scale: (1.05);
+    }
+    75%{
+        scale: (1.25);
+    }
+    100%{
+        background-image: url('/mountains.jpg');
+        scale: (1.05);
+    }
+}
+.homePage{
+    overflow: hidden;
+}
+.text-custom-logo{
+    color: #3d83a6 !important;;
+}
+.profileImg{
+    width: 15rem;
+    height: 15rem;
+}
+.profilename{
+    width: 18rem;
+    height: 3rem;
+}
+.homeskills{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: hometyping 5s steps(25) infinite;
+}
+@keyframes hometyping {
+    0%{width: 0;}
+    40%{width: 25ch;}
+    60%{width: 25ch;}
+    100%{width: 0;}
+}
+.btn-custom-logo,.btn-custom-transparent:hover{
+    background-color: #3d83a6;
+    font-weight: 500;
+    color: var(--bs-light) !important;
+}
+.btn-custom-transparent,.btn-custom-logo:hover{
+    background-color: transparent;
+    border: 2px solid #3d83a6;
+    font-weight: 500;
+}
+.border-custom{
+    width: 1.8rem;
+    border: 2px solid #3d83a6;
+}
+.svg-custom-position{
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+}
+.w-5rem{
+    width: 9rem;
+    height: 9rem;
+}
+.w-40{
+    width: 40%;
+}
+.border-left-custom{
+    border-left: 4px solid #3d83a6;
+}
+.custom-bullet-circle{
+    width: 2rem;
+    height: 2rem;
+    top: 0.5rem;
+    z-index: 1 !important;
+    left: -1.1rem;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.projecttile{
+    min-width: 7rem;
+    min-height: 18em;
+}
+.project-nav{
+    transform: translateY(-25%);
+}
+.skill-nav-items:hover .nav-link{
+    color: var(--bs-logo-color) !important;
+}
+.hover-text-custom-logo:hover{
+    color: var(--bs-logo-color) !important;
+}
+.custom-shadow-lg{
+    box-shadow: 0px 3px 7px rgba(194, 194, 194, 0.318)
+}
+.project-menu-item{
+    width: 0 !important;
+    overflow: hidden;
+    white-space: nowrap !important;
+    transition-duration: 0.2s;
+}
+.nav-link:hover .project-menu-item,.project-menu-item.active{
+    width: 100% !important;
+    color: inherit !important;
+}
+.w-80{
+    width: 80%;
+}
+.naukari-logo{
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+}

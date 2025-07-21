@@ -1,6 +1,17 @@
+import withPWA from 'next-pwa';
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const baseConfig = {
   reactStrictMode: true,
 };
 
-export default nextConfig;
+const pwaOptions = {
+  dest: 'public',
+  register: true,
+  skipWaiting: true,
+  disable: process.env.NODE_ENV === 'development',
+  mode: 'production',
+  swSrc: './service-worker.js',  // Custom SW location (root of project),
+};
+
+export default withPWA(pwaOptions)(baseConfig);
