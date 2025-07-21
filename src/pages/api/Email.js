@@ -1,4 +1,3 @@
-import { text } from '@fortawesome/fontawesome-svg-core';
 import nodemailer from 'nodemailer';
 
 export default async function handler(req,res) {

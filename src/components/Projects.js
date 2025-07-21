@@ -179,11 +179,11 @@ export default function Projects(){
         }, {
             "title": "Startup Restart-loop Malware",
             "Description": [
-                "Simulated malware that creates a startup script for rebooting.",
-                "Used Python to create registry entries on Windows.",
+                "Simulated malware with startup script for rebooting.",
+                "Used Python to create registry entries.",
                 "Studied behavior in sandboxed VM."
             ],
-            "Tools": ["Python", "Windows Registry", "PyInstaller"],
+            "Tools": ["Windows Registry", "PyInstaller"],
             "url": ""
         }]
     }];
